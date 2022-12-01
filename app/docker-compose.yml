@@ -2,6 +2,7 @@ services:
   app:
     image: node:18-alpine
     command: sh -c "yarn install && yarn run dev"
+             echo "ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'secret'; flush privileges;" | mysql -psecret
     ports:
       - 80:3000
     working_dir: /app
