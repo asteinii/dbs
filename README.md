@@ -1,42 +1,23 @@
-# Docker Getting Started Tutorial
+# Cloud Recommondation
 
-This tutorial has been written with the intent of helping folks get up and running
-with containers and is designed to work with Docker Desktop. While not going too much 
-into depth, it covers the following topics:
+### Lecture: Introduction to Cloud Computing
+### Module leader: Paul Laird
+### Documentation by Anne Steinhauser (10622919)
 
-- Running your first container
-- Building containers
-- Learning what containers are running and removing them
-- Using volumes to persist data
-- Using bind mounts to support development
-- Using container networking to support multi-container applications
-- Using Docker Compose to simplify the definition and sharing of applications
-- Using image layer caching to speed up builds and reduce push/pull size
-- Using multi-stage builds to separate build-time and runtime dependencies
+## Company description
+The start-up Yuri enables research in weightlessness for anyone on the ISS, rocket or parabolic flights. Yuri currently employs 31 people at its headquarter in Mecka and in a few months in its new location in Luxembourg. Yuri's order book is filling up more and more because many new customers heard about their missions. Therefore further hirings in the team are planned. Since some changes are pending, it is currently being discussed whether to switch to a cloud solution or to stay with the existing on-premise IT infrastructure. They currently use Microsoft Office 2019 on their computers in the office. But when they travel, they have problems with VPN access, so the files that are needed on the trip are usually shared via email (ref. Yuri,2022).
 
-## Getting Started
+## Contrast of cloud vs non-cloud solutions
+The ability to access and work on their data files from anywhere is very important to Yuri. In addition, it is of immense importance that the data is up to date and that no inconsistencies occur, as these could potentially risk the mission in space due to outdated analysis, for example. In order to avoid this, on-premise solutions are at a disadvantage when traveling. Access via the VPN is probably not stable enough and employees cannot easily synchronize the data with the latest version. In contrast, with a cloud solution, files are located in the cloud, which is used as a storage location. This means that employees can access their files quickly and easily from any end device with Internet access and an account, and data inconsistencies can be eliminated (ref. Diamond, 2020).
 
-If you wish to run the tutorial, you can use the following command after installing Docker Desktop:
+## Recommendation
+For the upcoming changes and the expansion of the team, there is the possibility to expand the existing IT infrastructure by setting up a Microsoft Office 365 account for each employee. This allows employees to share files through the cloud and work on them together in real time. So for Yuri, the service level SaaS, Software as a Service is recommended because a service such as Microsoft 365 for Business has many advantages. The team is more flexible with the trips to the US when they finalize their products there and deploy them to the rocket, as they have access to all their applications. In addition, they can access all the data from tests they have done in the office from anywhere and continue to work on it together. SaaS offers the advantage that virus protection, for example, is provided by the cloud service provider itself and all employees always work on the latest version of the application programs without having to worry about updates. The company can manage the user-specific application configuration settings, but not the storage, network, servers or operating systems. Employees can access the provider's various services through a web browser, which acts as a thin-client interface between the client device and the cloud infrastructure.
+As the deployment model, they can use a private cloud. This is the best fit for Yuri, as only Yuri enterprise accounts can access the cloud and their data is therefore more secure. By using the private cloud, it is also possible to work more efficiently, as services are scaled appropriately according to individual requirements.
 
-```bash
-docker run -d -p 80:80 docker/getting-started
-```
+## Justification for each final recommendation provided
+Switching to a cloud solution makes sense for Yuri, as they are working on an innovative idea that will allow the team to grow. Furthermore, employees will need to be able to travel more and work from anywhere in the world. For Yuri, there are several benefits to using the cloud, such as Microsoft Office 365. These include financial benefits, as although the company will initially spend more than before, as they had low running costs with their in-house server. However, the cost-benefit factor in the longer term is definitely better with the cloud variant and the company only pays for what they actually need and use (pay-per-use). Technological benefits arise from being able to access the cloud from any network and having employees always working on the latest version. There are also benefits from not having to worry about storage space and operational features that make it easy to share files and tools. Environmental benefits also arise from the cloud solution, as employees do not have to travel to the office, but can work from anywhere.
 
-Once it has started, you can open your browser to [http://localhost](http://localhost).
 
-## Development
-
-This project has a `docker-compose.yml` file, which will start the mkdocs application on your
-local machine and help you see changes instantly.
-
-```bash
-docker-compose up
-```
-
-## Contributing
-
-If you find typos or other issues with the tutorial, feel free to create a PR and suggest fixes!
-
-If you have ideas on how to make the tutorial better or new content, please open an issue first before working on your idea. While we love input, we want to keep the tutorial  scoped to newcomers.
-As such, we may reject ideas for more advanced requests and don't want you to lose any work you might
-have done. So, ask first and we'll gladly hear your thoughts!
+## References
+Diamond, 2020: Diamond,Paul (2020); https://www.microsoft.com/de-de/microsoft-365/business-insights-ideas/resources/cloud-storage-vs-on-premises-servers  <br />
+Yuri, 2022: Kugel, Mark (2022); https://www.yurigravity.com/about#the-team
